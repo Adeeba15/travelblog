@@ -3,7 +3,26 @@
 
 {% block title %}Create Account{% endblock title %}
  
+ {% block head %}
+      <style>
+         main{
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+         }
+      </style>
+{% endblock head %}
+   
+ 
  {% block content %}
-    <h1>Register Page</h1>
+    <div class="card">
+      <!-- <img class="card-img-top" src="holder.js/100x180/" alt="Title"> -->
+      <div class="card-body">
+         <h4 class="card-title">Register to Travel Blog</h4>
+         <p class="card-text">
+            {% include 'partials/register_form.html' %}
+         </p>
+      </div>
+    </div>
  {% endblock content %}
        
